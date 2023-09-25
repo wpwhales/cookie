@@ -1,8 +1,8 @@
 <?php
 
-namespace Illuminate\Cookie;
+namespace WPWhales\Cookie;
 
-use Illuminate\Support\ServiceProvider;
+use WPWhales\Support\ServiceProvider;
 
 class CookieServiceProvider extends ServiceProvider
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Illuminate\Cookie;
+namespace WPWhales\Cookie;
 
-use Illuminate\Contracts\Cookie\QueueingFactory as JarContract;
-use Illuminate\Support\Arr;
-use Illuminate\Support\InteractsWithTime;
-use Illuminate\Support\Traits\Macroable;
+use WPWhales\Contracts\Cookie\QueueingFactory as JarContract;
+use WPWhales\Support\Arr;
+use WPWhales\Support\InteractsWithTime;
+use WPWhales\Support\Traits\Macroable;
 use Symfony\Component\HttpFoundation\Cookie;
 
 class CookieJar implements JarContract

@@ -1,6 +1,6 @@
 <?php
 
-namespace Illuminate\Cookie;
+namespace WPWhales\Cookie;
 
 class CookieValuePrefix
 {

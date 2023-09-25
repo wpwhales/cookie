@@ -1,11 +1,11 @@
 <?php
 
-namespace Illuminate\Cookie\Middleware;
+namespace WPWhales\Cookie\Middleware;
 
 use Closure;
-use Illuminate\Contracts\Encryption\DecryptException;
-use Illuminate\Contracts\Encryption\Encrypter as EncrypterContract;
-use Illuminate\Cookie\CookieValuePrefix;
+use WPWhales\Contracts\Encryption\DecryptException;
+use WPWhales\Contracts\Encryption\Encrypter as EncrypterContract;
+use WPWhales\Cookie\CookieValuePrefix;
 use Symfony\Component\HttpFoundation\Cookie;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,7 +15,7 @@ class EncryptCookies
     /**
      * The encrypter instance.
      *
-     * @var \Illuminate\Contracts\Encryption\Encrypter
+     * @var \WPWhales\Contracts\Encryption\Encrypter
      */
     protected $encrypter;
 
@@ -36,7 +36,7 @@ class EncryptCookies
     /**
      * Create a new CookieGuard instance.
      *
-     * @param  \Illuminate\Contracts\Encryption\Encrypter  $encrypter
+     * @param  \WPWhales\Contracts\Encryption\Encrypter  $encrypter
      * @return void
      */
     public function __construct(EncrypterContract $encrypter)
@@ -58,7 +58,7 @@ class EncryptCookies
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \WPWhales\Http\Request  $request
      * @param  \Closure  $next
      * @return \Symfony\Component\HttpFoundation\Response
      */
